@@ -1,0 +1,24 @@
+mensagens:
+  terreno_protegido_sucesso: "Terreno protegido com sucesso!"
+  terreno_removido: "Proteção de terreno removida."
+  terreno_sem_protecao: "Você não possui terrenos protegidos para remover."
+  pvp_proibido: "PvP não é permitido em terrenos protegidos."
+  ataque_proibido: "Você não pode ser atacado em um terreno protegido."
+  entrada_terreno_protegido: "Você entrou em um terreno protegido."
+  compra_terreno_sucesso: "Terreno comprado com sucesso!"
+  dinheiro_insuficiente: "Você não tem dinheiro suficiente para comprar este terreno."
+  permissão_negada: "Você não tem permissão para comprar terrenos."
+  plugin_ativado: "Plugin de compra de terrenos habilitado!"
+  plugin_desativado: "Plugin de compra de terrenos desabilitado!"
+  sem_permissao_quebrar: "&cVocê não tem permissão para quebrar este bloco!"
+  sem_permissao_interagir: "&cVocê não tem permissão para interagir com este bloco!"
+  mensagem_tentativa_quebrar: "&eUm jogador tentou quebrar um bloco protegido em sua propriedade."
+  mensagem_tentativa_interagir: "&eUm jogador tentou interagir com um bloco protegido em sua propriedade."
+  sem_permissao_construir: "&eVocê não tem permissão para construir neste terreno privado."
+  sem_permissao_entrar: "&eVocê não tem permissão para entrar neste terreno privado."
+
+economia:
+  preco_terreno: 1000
+  largura_terreno: 10
+  comprimento_terreno: 10
+

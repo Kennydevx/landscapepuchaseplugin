@@ -1,0 +1,9 @@
+name: MinecraftPlugin
+version: 1.0
+main: com.example.MinecraftPlugin
+api-version: 1.16
+commands:
+  spawnAgent:
+    description: Spawn a simulated agent
+    usage: /spawnAgent <agentName>
+

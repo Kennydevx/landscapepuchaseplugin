@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.seupacote'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven { url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/") } // Repositório atualizado para o Spigot
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT' // Use compileOnly para evitar embutir o Spigot no JAR final
+    implementation 'org.json:json:20210307' // Para manipulação de JSON
+    testImplementation 'junit:junit:4.13.2'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task buildPluginJar(type: Jar) {
+    from sourceSets.main.output
+    archiveBaseName.set('MinecraftPlugin')
+    archiveVersion.set('1.0')
+    archiveClassifier.set('')
+
+    manifest {
+        attributes(
+            'Main-Class': 'com.seupacote.MinecraftPlugin', // Classe principal
+            'Plugin-Name': 'MinecraftPlugin',
+            'Version': '1.0'
+        )
+    }
+}
+
+build.dependsOn buildPluginJar
+

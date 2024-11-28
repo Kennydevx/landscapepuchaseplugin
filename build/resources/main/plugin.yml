@@ -1,0 +1,37 @@
+name: LandPurchasePlugin
+version: 1.2
+main: com.seupacote.LandPurchasePlugin
+commands:
+  comprarterreno:
+    description: Compre um terreno no jogo.
+    usage: /comprarterreno
+    permission: landpurchase.buy
+    permission-message: Você não tem permissão para comprar terrenos.
+
+  venderterreno:
+    description: Coloque um terreno à venda.
+    usage: /venderterreno <jogador> <preço>
+    permission: landpurchase.sell
+    permission-message: Você não tem permissão para vender terrenos.
+
+  aceitarvenda:
+    description: Aceite uma venda de terreno.
+    usage: /aceitarvenda
+    permission: landpurchase.buy
+    permission-message: Você não tem permissão para comprar terrenos.
+
+  liberaracesso:
+    description: Conceda acesso a outro jogador para seu terreno.
+    usage: /liberaracesso <jogador> <tipo-permissao>
+    permission: landpurchase.manage
+    permission-message: Você não tem permissão para gerenciar permissões.
+
+  liberaracessotodos:
+    description: Conceda acesso a todos os jogadores para seu terreno.
+    usage: /liberaracessotodos
+    permission: landpurchase.manage
+    permission-message: Você não tem permissão para gerenciar permissões.
+depend: [Vault]
+softdepend: [LuckPerms]
+api-version: 1.18
+

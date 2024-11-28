@@ -1,0 +1,7 @@
+agent:
+  learningRate: 0.1
+  discountFactor: 0.9
+  explorationRate: 0.1
+  numStates: 5
+  numActions: 5
+
